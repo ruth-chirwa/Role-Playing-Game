@@ -49,3 +49,15 @@ function goStore() {
   function goCave(){
     console.log("Going to cave.");
   }
+  function fightDragon(){
+    console.log("Fighting dragon.");
+  }
+  /* These elements have a special property called onclick, 
+    which you can use to determine what happens when someone clicks that button.
+  */
+  // You can access properties in JavaScript a couple of different ways. 
+  // The first is with dot notation.
+  // In this example, button1 is the button element, and goStore is a reference to a function. 
+  //When the button1 is clicked, GoStore will be called.
+  // initialize buttons
+  button1.onclick = goStore;
