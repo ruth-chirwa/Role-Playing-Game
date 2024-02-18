@@ -92,6 +92,12 @@ function goStore() {
   function buyWeapon(){
     button2.onclick = buyWeapon;
   }
+  // When you have repetition in your code, this is a sign that you need another function.
+  // Functions can take parameters, which are values that are given to the function each time it is run. 
+  // Here is a function that takes a parameter called param:
+  function update(location){
+  
+  }
   
   
   
