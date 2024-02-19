@@ -102,4 +102,14 @@ function goStore() {
   // arrays can store any data type. they can store objects
   // objects use properties, or keys, to access and modify data.
   // Objects are indicated by curly braces {}. An empty object would look like {}.
-  const locations = [{}]; 
+  // Object properties are written as key: value pairs, 
+  //where key is the name of the property (or the key), 
+  //and value is the value that property holds.
+  // we separate key value pairs with a comma
+  const locations = [
+    {
+      name: "town square",
+      "button text": ["Go to store", "Go to cave", "Fight dragon"],
+      "button functions": [goStore, goCave, fightDragon]
+    }
+  ];
