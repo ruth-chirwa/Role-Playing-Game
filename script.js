@@ -98,6 +98,8 @@ function goStore() {
   function update(location){
   
   }
-  
-  
-  
+ // to create an empty array from a variable
+  // arrays can store any data type. they can store objects
+  // objects use properties, or keys, to access and modify data.
+  // Objects are indicated by curly braces {}. An empty object would look like {}.
+  const locations = [{}]; 
