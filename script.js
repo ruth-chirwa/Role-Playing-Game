@@ -71,8 +71,10 @@ button3.onclick = fightDragon;
 // Indices are numerical values and start at 0 - this is called zero-based indexing. 
 // arg[0] would be the first element in the arg array. 
 function goTown() {
-  update(locations);
-  }
+  update(locations[0]);
+}
+
+
 function goStore() {
     /*button1.innerText = "Buy 10 health (10 gold)";
     button2.innerText = "Buy weapon (30 gold)";
@@ -81,7 +83,7 @@ function goStore() {
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
     text.innerText = "You enter the store.";*/
-   
+    update(locations[1]);
   }
 
   function buyHealth(){
@@ -94,14 +96,15 @@ function goStore() {
   // When you have repetition in your code, this is a sign that you need another function.
   // Functions can take parameters, which are values that are given to the function each time it is run. 
   // Here is a function that takes a parameter called param:
-  function update(location){
-    button1.innerText = "Go to store";
-    button2.innerText = "Go to cave";
-    button3.innerText = "Fight dragon";
-    button1.onclick = goStore;
-    button2.onclick = goCave;
-    button3.onclick = fightDragon;
-    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
+  // That way, you use bracket notation to get the "button text" property of the location object passed into the function.
+  function update(location) {
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
+    text.innerText = location.text;
   }
  // to create an empty array from a variable
   // arrays can store any data type. they can store objects
@@ -133,3 +136,9 @@ function goStore() {
       text: "You enter the store."
     }
   ];
+  function fightSlime(){
+
+  }
+  function fightBeast(){
+    
+  }
