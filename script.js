@@ -63,25 +63,24 @@ function goStore() {
   button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
-//The innerText property controls the text that appears in an HTML element.
-//to wrap a text in quotes you have to use the forward lash \ then the double quotes
+// The innerText property controls the text that appears in an HTML element.
+// to wrap a text in quotes you have to use the forward lash \ then the double quotes
+// to call a function
+// You pass arguments by including them within the parentheses of the function call.
+// This is called bracket notation. Values in an array are accessed by index. 
+// Indices are numerical values and start at 0 - this is called zero-based indexing. 
+// arg[0] would be the first element in the arg array. 
 function goTown() {
-  button1.innerText = "Go to store";
-  button2.innerText = "Go to cave";
-  button3.innerText = "Fight dragon";
-  button1.onclick = goStore;
-  button2.onclick = goCave;
-  button3.onclick = fightDragon;
-  text.innerText = "You are in the town square. You see a sign that says \"Store\".";
-}
+  update(locations);
+  }
 function goStore() {
-    button1.innerText = "Buy 10 health (10 gold)";
+    /*button1.innerText = "Buy 10 health (10 gold)";
     button2.innerText = "Buy weapon (30 gold)";
     button3.innerText = "Go to town square";
     button1.onclick = buyHealth;
     button2.onclick = buyWeapon;
     button3.onclick = goTown;
-    text.innerText = "You enter the store.";
+    text.innerText = "You enter the store.";*/
    
   }
 
@@ -96,7 +95,13 @@ function goStore() {
   // Functions can take parameters, which are values that are given to the function each time it is run. 
   // Here is a function that takes a parameter called param:
   function update(location){
-  
+    button1.innerText = "Go to store";
+    button2.innerText = "Go to cave";
+    button3.innerText = "Fight dragon";
+    button1.onclick = goStore;
+    button2.onclick = goCave;
+    button3.onclick = fightDragon;
+    text.innerText = "You are in the town square. You see a sign that says \"Store\".";
   }
  // to create an empty array from a variable
   // arrays can store any data type. they can store objects
