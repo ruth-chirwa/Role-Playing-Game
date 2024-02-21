@@ -1,5 +1,5 @@
 # Role-Playing-Game
-- day 31 of #100daysofcode
+- day 31 - 40 of #100daysofcode
 - building a role playing game using javascript
 - JavaScript is a powerful scripting language that you can use to make web pages interactive.
 - It's one of the core technologies of the web, along with HTML and CSS.
