@@ -46,8 +46,8 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 function goStore() {
     console.log("Going to store.");
   }
-  function goCave(){
-    console.log("Going to cave.");
+  function goCave() {
+    update(locations[2]);
   }
   function fightDragon(){
     console.log("Fighting dragon.");
@@ -85,9 +85,13 @@ function goStore() {
     text.innerText = "You enter the store.";*/
     update(locations[1]);
   }
-
+// There is a shorthand way to add or subtract from a variable called compound assignment.
   function buyHealth(){
     button1.onclick = buyHealth;
+    gold -= 10;
+    goldText.innerText = gold;
+    health += 10;
+    healthText.innerText = health;
   }
   
   function buyWeapon(){
