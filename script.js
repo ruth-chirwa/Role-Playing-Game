@@ -156,3 +156,23 @@ function goStore() {
   function fightBeast(){
     
   }
+  // Dealing with If statements
+  //  When you want to run code conditionally, you can use the if statement.
+  // An if statement is used to make decisions in code.
+  // he keyword if is followed by a condition in parentheses.
+  //  If the condition is true, the code inside the curly braces {} is executed.
+  //  If the condition is false, the code inside the curly braces is skipped.
+  // adding an else statement does not agree with  the first condition
+  // both if and else statements are condition statements
+  function buyHealth() {
+    if(gold >= 10) {
+      gold -= 10;
+    health += 10;
+    goldText.innerText = gold;
+    healthText.innerText = health;
+    }  else {
+      text.innerText = "You do not have enough gold to buy health."
+    }
+  }
+
+  const weapons = [];
