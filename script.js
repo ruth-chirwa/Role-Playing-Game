@@ -196,10 +196,16 @@ function goStore() {
       
       }
   ];
+  // Increasing a value by 1, or incrementing, has a special operator in JavaScript: ++. 
+  // If you wanted to increase num by 1, you could write num++.
   function buyWeapon() {
     if (gold >= 30) {
       gold -= 30;
-       currentWeapon += 1;
+      currentWeapon++;
+
+      goldText.innerText = gold;
+
+      let newWeapon = weapons;
+      text.innerText = "You now have a new weapon.";
     }
-  
   }
